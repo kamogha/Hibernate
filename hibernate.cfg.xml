@@ -17,6 +17,8 @@
 		<!-- Show SQL on console -->
 		<property name="hibernate.show_sql">true</property>
 		
+		<!--(*Write this only when you use getCurrentSession) Setting Session context model for getCurrentSession -->
+		<property name="current_session_context_class">thread</property>
 		<property name="hbm2ddl.auto">update</property>
 		<mapping class="hibernate.UserDetails" />
 	</session-factory>
